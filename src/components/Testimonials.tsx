@@ -16,46 +16,45 @@ interface TestimonialProps {
 
 const testimonials: TestimonialProps[] = [
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe",
-    comment: "This landing page is awesome!",
+    image: "https://i.pravatar.cc/150?img=32",
+    name: "Bu Ratna",
+    userName: "Wali Kelas 9B",
+    comment: "Sejak pakai Skoola, saya tidak perlu lagi merekap absen manual. Semua otomatis dan akurat!",
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe1",
+    image: "https://i.pravatar.cc/150?img=12",
+    name: "Pak Budi",
+    userName: "Guru BK",
     comment:
-      "Lorem ipsum dolor sit amet,empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
-  },
-
-  {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe2",
-    comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "Sangat membantu! Kehadiran siswa bisa dipantau langsung dari dashboard tanpa harus keliling kelas.",
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe3",
+    image: "https://i.pravatar.cc/150?img=45",
+    name: "Dita Anggraini",
+    userName: "Siswa XII IPA 2",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "Absen jadi lebih cepat, tinggal scan wajah aja. Gak perlu antre tanda tangan lagi.",
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe4",
+    image: "https://i.pravatar.cc/150?img=23",
+    name: "Pak Arif",
+    userName: "Kepala Sekolah",
     comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud.",
+      "Laporan kehadiran harian dan bulanan dari Skoola sangat membantu evaluasi disiplin siswa.",
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe5",
+    image: "https://i.pravatar.cc/150?img=18",
+    name: "Ibu Rina",
+    userName: "Orang Tua Siswa",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Saya bisa langsung dapat notifikasi kalau anak saya absen atau telat. Sangat transparan dan nyaman.",
+  },
+  {
+    image: "https://i.pravatar.cc/150?img=60",
+    name: "Rizky",
+    userName: "Siswa XI TKJ",
+    comment:
+      "Keren banget aplikasinya! Bisa absen sambil ngaca 🤭. Fitur wajahnya responsif dan cepat.",
   },
 ];
 
@@ -66,20 +65,20 @@ export const Testimonials = () => {
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold">
-        Discover Why
+        Kenapa
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          People Love{" "}
+          Mereka Suka{" "}
         </span>
-        This Landing Page
+        Skoola
       </h2>
 
       <p className="text-xl text-muted-foreground pt-4 pb-8">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non unde error
-        facere hic reiciendis illo
+        Skoola telah membantu ratusan sekolah dan ribuan siswa dalam mencatat kehadiran
+        secara digital, otomatis, dan transparan.
       </p>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2  lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2 lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
         {testimonials.map(
           ({ image, name, userName, comment }: TestimonialProps) => (
             <Card
@@ -89,10 +88,13 @@ export const Testimonials = () => {
               <CardHeader className="flex flex-row items-center gap-4 pb-2">
                 <Avatar>
                   <AvatarImage
-                    alt=""
+                    alt={name}
                     src={image}
                   />
-                  <AvatarFallback>OM</AvatarFallback>
+                  <AvatarFallback>
+                    {name.split(" ")[0][0]}
+                    {name.split(" ")[1]?.[0]}
+                  </AvatarFallback>
                 </Avatar>
 
                 <div className="flex flex-col">

@@ -26,51 +26,53 @@ interface PricingProps {
 
 const pricingList: PricingProps[] = [
   {
-    title: "Free",
+    title: "Basic",
     popular: 0,
     price: 0,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Get Started",
+      "Cocok untuk uji coba sistem absensi di 1 kelas atau skala kecil.",
+    buttonText: "Coba Gratis",
     benefitList: [
-      "1 Team member",
-      "2 GB Storage",
-      "Upto 4 pages",
-      "Community support",
-      "lorem ipsum dolor",
+      "1 Kelas aktif",
+      "30 Siswa",
+      "Scan Wajah & QR",
+      "Laporan Kehadiran Harian",
+      "Email Dukungan",
     ],
   },
   {
-    title: "Premium",
+    title: "Skoola Pro",
     popular: 1,
-    price: 5,
+    price: 99,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Start Free Trial",
+      "Paket lengkap untuk sekolah yang ingin digitalisasi penuh absensi dan laporan.",
+    buttonText: "Mulai 30 Hari Gratis",
     benefitList: [
-      "4 Team member",
-      "4 GB Storage",
-      "Upto 6 pages",
-      "Priority support",
-      "lorem ipsum dolor",
+      "Semua kelas aktif",
+      "Presensi Wajah + Lokasi",
+      "QR Code Absen Mapel",
+      "Laporan Bulanan & Rekap",
+      "Notifikasi Orang Tua",
+      "Dashboard Admin & Guru",
     ],
   },
   {
     title: "Enterprise",
     popular: 0,
-    price: 40,
+    price: 299,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Contact US",
+      "Solusi khusus untuk sekolah besar, yayasan, atau integrasi multi-cabang.",
+    buttonText: "Hubungi Kami",
     benefitList: [
-      "10 Team member",
-      "8 GB Storage",
-      "Upto 10 pages",
-      "Priority support",
-      "lorem ipsum dolor",
+      "Multi-Cabang Sekolah",
+      "Custom Domain & Branding",
+      "Integrasi API & Eksternal DB",
+      "Support SLA",
+      "Tim Onboarding",
     ],
   },
 ];
+
 
 export const Pricing = () => {
   return (
@@ -78,18 +80,18 @@ export const Pricing = () => {
       id="pricing"
       className="container py-24 sm:py-32"
     >
+  
       <h2 className="text-3xl md:text-4xl font-bold text-center">
-        Get
-        <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          {" "}
-          Unlimited{" "}
-        </span>
-        Access
-      </h2>
-      <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-        reiciendis.
-      </h3>
+  Pilih Paket{" "}
+  <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
+    Skoola
+  </span>{" "}
+  Sesuai Kebutuhan Sekolah Anda
+</h2>
+<h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
+  Dari kelas kecil hingga sekolah besar, Skoola hadir untuk bantu efisiensi presensi.
+</h3>
+
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {pricingList.map((pricing: PricingProps) => (
           <Card

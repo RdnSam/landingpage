@@ -20,16 +20,16 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <Sponsors />
+      {/* <Sponsors /> */}
       <About />
       <HowItWorks />
       <Features />
-      <Services />
+      {/* <Services /> */}
       <Cta />
       <Testimonials />
-      <Team />
+      {/* <Team /> */}
       <Pricing />
-      <Newsletter />
+      {/* <Newsletter /> */}
       <FAQ />
       <Footer />
       <ScrollToTop />

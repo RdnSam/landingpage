@@ -13,155 +13,70 @@ export const Footer = () => {
             className="font-bold text-xl flex"
           >
             <LogoIcon />
-            ShadcnUI/React
+            Skoola
+          </a>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Platform absensi sekolah digital berbasis wajah, lokasi, dan QR code.
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-2">
+          <h3 className="font-bold text-lg">Ikuti Kami</h3>
+          <a href="#" className="opacity-60 hover:opacity-100">
+            Instagram
+          </a>
+          <a href="#" className="opacity-60 hover:opacity-100">
+            LinkedIn
+          </a>
+          <a href="#" className="opacity-60 hover:opacity-100">
+            TikTok
           </a>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Follow US</h3>
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Github
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Twitter
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Dribbble
-            </a>
-          </div>
+          <h3 className="font-bold text-lg">Platform</h3>
+          <a href="#" className="opacity-60 hover:opacity-100">
+            Android
+          </a>
+          <a href="#" className="opacity-60 hover:opacity-100">
+            iOS (Coming Soon)
+          </a>
+          <a href="#" className="opacity-60 hover:opacity-100">
+            Web Dashboard
+          </a>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Platforms</h3>
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Web
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Mobile
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Desktop
-            </a>
-          </div>
+          <h3 className="font-bold text-lg">Informasi</h3>
+          <a href="#features" className="opacity-60 hover:opacity-100">
+            Fitur
+          </a>
+          <a href="#pricing" className="opacity-60 hover:opacity-100">
+            Paket Harga
+          </a>
+          <a href="#faq" className="opacity-60 hover:opacity-100">
+            FAQ
+          </a>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">About</h3>
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Features
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Pricing
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              FAQ
-            </a>
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Community</h3>
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Youtube
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Discord
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Twitch
-            </a>
-          </div>
+          <h3 className="font-bold text-lg">Komunitas</h3>
+          <a href="#" className="opacity-60 hover:opacity-100">
+            Sekolah Mitra
+          </a>
+          <a href="#" className="opacity-60 hover:opacity-100">
+            Forum Guru
+          </a>
+          <a href="#" className="opacity-60 hover:opacity-100">
+            Webinar Skoola
+          </a>
         </div>
       </section>
 
       <section className="container pb-14 text-center">
         <h3>
-          &copy; 2024 Landing page made by{" "}
-          <a
-            rel="noreferrer noopener"
-            target="_blank"
-            href="https://www.linkedin.com/in/leopoldo-miranda/"
-            className="text-primary transition-all border-primary hover:border-b-2"
-          >
-            Leo Miranda
-          </a>
-        </h3>
+          &copy; 2024 Skoola — Dibuat dengan ❤️ oleh{" "}
+          <a href="">Skoola Dev</a>        </h3>
       </section>
     </footer>
   );

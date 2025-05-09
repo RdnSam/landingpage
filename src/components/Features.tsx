@@ -6,9 +6,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import image from "../assets/growth.png";
-import image3 from "../assets/reflecting.png";
-import image4 from "../assets/looking-ahead.png";
+import image from "../assets/file.svg";
+import image3 from "../assets/clock.svg";
+import image4 from "../assets/qr.svg";
 
 interface FeatureProps {
   title: string;
@@ -18,35 +18,36 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Responsive Design",
+    title: "Presensi Wajah & QR",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Siswa dapat melakukan absensi hanya dengan scan wajah atau QR code secara cepat dan akurat.",
     image: image4,
   },
   {
-    title: "Intuitive user interface",
+    title: "Deteksi Lokasi Otomatis",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Skoola secara otomatis mencatat lokasi absensi, memastikan siswa hadir di area sekolah.",
     image: image3,
   },
   {
-    title: "AI-Powered insights",
+    title: "Laporan & Notifikasi Real-time",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Guru, siswa, dan wali murid mendapatkan notifikasi dan laporan kehadiran langsung dari sistem.",
     image: image,
   },
 ];
 
 const featureList: string[] = [
-  "Dark/Light theme",
-  "Reviews",
-  "Features",
-  "Pricing",
-  "Contact form",
-  "Our team",
-  "Responsive design",
-  "Newsletter",
-  "Minimalist",
+  "Scan Wajah",
+  "QR Code",
+  "Deteksi Lokasi",
+  "Laporan Kehadiran",
+  "Rekap Bulanan",
+  "Notifikasi Otomatis",
+  "Cuti/Izin Online",
+  "Dashboard Admin",
+  "Support Android & IOS  ",
+
 ];
 
 export const Features = () => {
@@ -56,9 +57,9 @@ export const Features = () => {
       className="container py-24 sm:py-32 space-y-8"
     >
       <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
-        Many{" "}
+        Fitur Unggulan{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Great Features
+          Skoola
         </span>
       </h2>
 
@@ -87,7 +88,7 @@ export const Features = () => {
             <CardFooter>
               <img
                 src={image}
-                alt="About feature"
+                alt="Skoola feature illustration"
                 className="w-[200px] lg:w-[300px] mx-auto"
               />
             </CardFooter>
