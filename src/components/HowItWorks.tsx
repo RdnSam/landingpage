@@ -7,7 +7,7 @@ import {
   CardTitle,
 } from "./ui/card";
 import faceImage from "../assets/pilot.png";
-import clockImage from "../assets/pilot.png";
+import clockImage from "../assets/growth.png";
 import notifImage from "../assets/reflecting.png";
 
 const roles = ["Konsultasi", "Survey", "Pemesanan"] as const;

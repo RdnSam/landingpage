@@ -16,7 +16,7 @@ export const Footer = () => {
             Rifda Jepara
           </a>
           <p className="mt-2 text-sm text-muted-foreground">
-            Spesialis kusen aluminium & kayu berkualitas di Bogor. Jl. Falah RT 02/02 Kalisuren, Tajurhalang, Parung, Bogor.
+            Spesialis aluminium, kayu, dan furniture berkualitas di Bogor. Jl. Falah RT 02/02 Kalisuren, Tajurhalang, Parung, Bogor.
           </p>
           <p className="mt-2 text-sm text-muted-foreground">
             Buka: Senin - Minggu, 06:00 - 18:00
@@ -74,7 +74,7 @@ export const Footer = () => {
 
       <section className="container pb-14 text-center">
         <h3>
-          &copy; 2024 Rifda Jepara — Kusen Aluminium & Kayu Berkualitas di Bogor
+          &copy; 2024 Rifda Jepara — Aluminium, Kayu, Furniture Berkualitas di Bogor
         </h3>
       </section>
     </footer>

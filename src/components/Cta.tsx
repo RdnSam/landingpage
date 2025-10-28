@@ -38,9 +38,11 @@ export const Cta = () => {
           <Button
             variant="outline"
             className="w-full md:w-auto"
-            onClick={() => window.location.href = '#pricing'}
+            asChild
           >
-            Lihat Produk Kami
+            <a href="#pricing">
+              Lihat Produk Kami
+            </a>
           </Button>
         </div>
       </div>

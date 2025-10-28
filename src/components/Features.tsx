@@ -6,9 +6,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import image from "../assets/growth.png";
-import image3 from "../assets/looking-ahead.png";
-import image4 from "../assets/cube-leg.png";
+import image from "../assets/rifda-5.jpeg";
+import image3 from "../assets/rifda-1.jpeg";
+import image4 from "../assets/rifda-2.jpeg";
 
 interface FeatureProps {
   title: string;

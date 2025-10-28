@@ -1,26 +1,31 @@
 // src/components/AboutIntro.tsx atau src/app/components/AboutIntro.tsx
 import React, { useState } from "react";
-import { YouTubeEmbed } from "../components/vid/YouTubeEmbed";
+import rifda1 from "../assets/rifda-1.jpeg";
+import rifda2 from "../assets/rifda-2.jpeg";
+import rifda3 from "../assets/rifda-3.jpeg";
+import rifda4 from "../assets/rifda-4.jpeg";
+import rifda5 from "../assets/rifda-5.jpeg";
 
 export const AboutIntro: React.FC = () => {
-  // Daftar URL YouTube yang ingin ditampilkan
-  const videoUrls = [
-    "",
-    "",
-    "",
-    // Tambahkan URL lain sesuai kebutuhan...
+  // Daftar gambar galeri Rifda Jepara
+  const galleryImages = [
+    { src: rifda1, alt: "Produk Rifda Jepara 1" },
+    { src: rifda2, alt: "Produk Rifda Jepara 2" },
+    { src: rifda3, alt: "Produk Rifda Jepara 3" },
+    { src: rifda4, alt: "Produk Rifda Jepara 4" },
+    { src: rifda5, alt: "Produk Rifda Jepara 5" },
   ];
 
-  // State untuk indeks video saat ini
+  // State untuk indeks gambar saat ini
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Handler navigasi prev/next dengan wrap-around
   const handlePrev = () => {
-    const prev = (currentIndex - 1 + videoUrls.length) % videoUrls.length;
+    const prev = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
     setCurrentIndex(prev);
   };
   const handleNext = () => {
-    const next = (currentIndex + 1) % videoUrls.length;
+    const next = (currentIndex + 1) % galleryImages.length;
     setCurrentIndex(next);
   };
 
@@ -47,35 +52,29 @@ export const AboutIntro: React.FC = () => {
                 Kami berkomitmen memberikan pelayanan terbaik dengan harga transparan dan garansi kualitas.
               </p>
 
-              {/* Video embed + tombol navigasi */}
+              {/* Image gallery + tombol navigasi */}
               <div className="mt-6 flex items-center justify-center">
                 {/* Tombol Previous */}
                 <button
                   onClick={handlePrev}
-                  aria-label="Previous video"
+                  aria-label="Previous image"
                   className="
-                    p-2 rounded-full bg-muted/20 hover:bg-muted/40 
+                    p-3 rounded-full bg-primary/10 hover:bg-primary/20
                     focus:outline-none focus:ring-2 focus:ring-primary
-                    disabled:opacity-50 disabled:cursor-not-allowed
+                    transition-all text-2xl font-bold
                   "
-                  // Jika tidak ingin wrap-around, uncomment baris berikut:
-                  // disabled={currentIndex === 0}
                 >
                   &#8249; {/* karakter ‹ */}
                 </button>
 
-                {/* Wrapper video dengan aspect ratio 16:9 */}
-                <div className="mx-4 w-full max-w-2xl">
-                  {/* Jika Tailwind plugin aspect-ratio terpasang, bisa ganti wrapper:
-                      <div className="aspect-w-16 aspect-h-9 w-full">
-                        <YouTubeEmbed url={videoUrls[currentIndex]} className="w-full h-full" />
-                      </div>
-                  */}
-                  {/* Tanpa plugin: */}
-                  <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
-                    <YouTubeEmbed
-                      url={videoUrls[currentIndex]}
-                      className="absolute top-0 left-0 w-full h-full"
+                {/* Wrapper image dengan aspect ratio */}
+                <div className="mx-4 w-full max-w-3xl">
+                  <div className="relative w-full overflow-hidden rounded-lg shadow-lg">
+                    <img
+                      src={galleryImages[currentIndex].src}
+                      alt={galleryImages[currentIndex].alt}
+                      className="w-full h-auto object-cover"
+                      style={{ maxHeight: "500px" }}
                     />
                   </div>
                 </div>
@@ -83,22 +82,20 @@ export const AboutIntro: React.FC = () => {
                 {/* Tombol Next */}
                 <button
                   onClick={handleNext}
-                  aria-label="Next video"
+                  aria-label="Next image"
                   className="
-                    p-2 rounded-full bg-muted/20 hover:bg-muted/40 
+                    p-3 rounded-full bg-primary/10 hover:bg-primary/20
                     focus:outline-none focus:ring-2 focus:ring-primary
-                    disabled:opacity-50 disabled:cursor-not-allowed
+                    transition-all text-2xl font-bold
                   "
-                  // Jika tidak ingin wrap-around, uncomment:
-                  // disabled={currentIndex === videoUrls.length - 1}
                 >
                   &#8250; {/* karakter › */}
                 </button>
               </div>
 
-              {/* (Opsional) Indikator posisi video, misalnya "1 / 3" */}
-              <div className="text-center text-sm text-muted-foreground mt-2">
-                {currentIndex + 1} / {videoUrls.length}
+              {/* Indikator posisi gambar */}
+              <div className="text-center text-sm text-muted-foreground mt-4">
+                {currentIndex + 1} / {galleryImages.length}
               </div>
             </div>
 

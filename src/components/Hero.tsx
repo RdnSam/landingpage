@@ -14,7 +14,7 @@ export const Hero = () => {
             </span>{" "}
             Kusen Aluminium &{" "}
             <span className="inline bg-gradient-to-r from-[#43CEA2] via-[#185A9D] to-[#0F2027] text-transparent bg-clip-text">
-              Kayu Berkualitas
+              Kayu, Furniture
             </span>{" "}
           </h1>
         </main>

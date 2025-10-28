@@ -48,7 +48,7 @@ export const HeroCards = () => {
           />
           <CardTitle className="text-center">Rifda Jepara</CardTitle>
           <CardDescription className="font-normal text-primary">
-            Kusen Aluminium & Kayu Berkualitas
+            Aluminium, Kayu, Furniture
           </CardDescription>
         </CardHeader>
 

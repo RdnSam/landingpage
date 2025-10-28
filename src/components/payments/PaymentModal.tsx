@@ -27,10 +27,10 @@ export const PaymentModal: React.FC<PaymentModalProps> = ({
   onClose,
   planTitle,
   amount,
-  accountNumber = "4812133130",
-  bankName = "BANK CENTRAL ASIA",
-  accountName = "ANDRI WIJAYA EKO SAPUTRO",
-  phoneNumber = "+6281806778887",
+  accountNumber = "=",
+  bankName = "=",
+  accountName = "Rifda Jepara",
+  phoneNumber = "=",
 }) => {
   const formatPhoneForWa = (phone: string) => phone.replace(/\D/g, "");
   const handleCopy = async (text: string) => {

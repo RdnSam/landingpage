@@ -87,10 +87,10 @@
     --destructive-foreground: 0 0% 98%;
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-    /* Wood Brown theme for aluminium & wood business */
-    --primary: 25 75% 47%;
+    /* Aluminium Silver theme for aluminium, wood & furniture business */
+    --primary: 200 10% 40%;
     --primary-foreground: 0 0% 100%;
-    --ring: 25 75% 47%;
+    --ring: 200 10% 40%;
     --radius: 0.5rem;
   }
 
@@ -112,10 +112,10 @@
     --destructive-foreground: 0 85.7% 97.3%;
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
-    /* Wood Brown theme for aluminium & wood business - dark mode */
-    --primary: 25 75% 55%;
+    /* Aluminium Silver theme for aluminium, wood & furniture business - dark mode */
+    --primary: 200 10% 50%;
     --primary-foreground: 0 0% 100%;
-    --ring: 25 75% 55%;
+    --ring: 200 10% 50%;
   }
 }
 
