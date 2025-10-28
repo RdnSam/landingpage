@@ -5,9 +5,9 @@ import { YouTubeEmbed } from "../components/vid/YouTubeEmbed";
 export const AboutIntro: React.FC = () => {
   // Daftar URL YouTube yang ingin ditampilkan
   const videoUrls = [
-    "https://youtu.be/-VeAQy0uxfU",
-    "https://youtu.be/3Wm9G8lrR6s",
-    "https://youtu.be/FAtRaIkDxns",
+    "",
+    "",
+    "",
     // Tambahkan URL lain sesuai kebutuhan...
   ];
 
