@@ -1,5 +1,5 @@
 import { Statistics } from "./Statistics";
-import pilot from "../assets/pilot2.png";
+import pilot from "../assets/pilot.png";
 
 export const About = () => {
   return (
@@ -11,7 +11,7 @@ export const About = () => {
         <div className="px-6 flex flex-col-reverse md:flex-row gap-8 md:gap-12">
           <img
             src={pilot}
-            alt="Ilustrasi Absensi Digital"
+            alt="Prasojo Motor Bengkel Terpercaya"
             className="w-[300px] object-contain rounded-lg"
           />
           <div className="bg-green-0 flex flex-col justify-between">
@@ -20,13 +20,12 @@ export const About = () => {
                 <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
                   Tentang{" "}
                 </span>
-                Skoola
+                Prasojo Motor
               </h2>
               <p className="text-xl text-muted-foreground mt-4">
-                Skoola adalah platform absensi digital berbasis wajah, lokasi, dan QR code
-                yang dirancang khusus untuk kebutuhan sekolah. Dengan fitur lengkap
-                seperti rekap otomatis, cuti siswa, notifikasi, dan laporan kehadiran,
-                Skoola membantu sekolah menjadi lebih efisien dan modern.
+                Prasojo Motor adalah bengkel motor profesional yang berlokasi di Jalan Desa Kalisuren 02/02 Tajurhalang, Kabupaten Bogor.
+                Kami melayani semua jenis sepeda motor dengan layanan lengkap mulai dari service rutin, tune-up, perbaikan mesin, hingga custom modifikasi.
+                Dengan mekanik berpengalaman dan garansi service yang amanah, kepuasan pelanggan adalah prioritas kami.
               </p>
             </div>
 

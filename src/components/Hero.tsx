@@ -1,50 +1,48 @@
 import { Button } from "./ui/button";
 import { buttonVariants } from "./ui/button";
-import { HeroCards } from "./HeroCards";
-import { Mail } from "lucide-react";
+import { HeroCards } from "./HeroCards"; // bisa ganti jadi gambar mobil showcase
+import { Phone } from "lucide-react";
 
 export const Hero = () => {
   return (
     <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
       <div className="text-center lg:text-start space-y-6">
-      <main className="text-5xl md:text-6xl font-bold text-center">
-  <h1 className="inline">
-    <span className="inline bg-gradient-to-r from-[#F596D3] to-[#D247BF] text-transparent bg-clip-text">
-      Skoola
-    </span>{" "}
-    for smarter {" "}
-    <span className="inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
-              schools
+        <main className="text-5xl md:text-6xl font-bold text-center">
+          <h1 className="inline">
+            <span className="inline bg-gradient-to-r from-[#FF7E5F] to-[#FD3A69] text-transparent bg-clip-text">
+              Prasojo Motor
             </span>{" "}
-  </h1>
-
-</main>
-
+            Bengkel Motor{" "}
+            <span className="inline bg-gradient-to-r from-[#43CEA2] via-[#185A9D] to-[#0F2027] text-transparent bg-clip-text">
+              Terpercaya
+            </span>{" "}
+          </h1>
+        </main>
 
         <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-        Absensi digital modern untuk sekolah yang peduli efisiensi dan akurasi.
- 
+          Bengkel motor profesional di Bogor dengan layanan service lengkap, garansi terpercaya, dan mekanik berpengalaman. Kami siap merawat motor Anda dengan amanah.
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <Button className="w-full md:w-1/3">Get Started</Button>
+          <Button className="w-full md:w-1/3">Lihat Layanan</Button>
 
           <a
             rel="noreferrer noopener"
-            href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+            href="https://wa.me/6282124717778?text=Halo%20Prasojo%20Motor%2C%20saya%20ingin%20konsultasi%20service%20motor"
             target="_blank"
             className={`w-full md:w-1/3 ${buttonVariants({
               variant: "outline",
             })}`}
           >
             Hubungi Kami
-            <Mail className="ml-2 w-5 h-5" />
+            <Phone className="ml-2 w-5 h-5" />
           </a>
         </div>
       </div>
 
       {/* Hero cards sections */}
       <div className="z-10">
+        {/* Ganti HeroCards jadi showcase mobil */}
         <HeroCards />
       </div>
 

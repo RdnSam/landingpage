@@ -1,72 +1,151 @@
-import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { MedalIcon, MapIcon, PlaneIcon, GiftIcon } from "../components/Icons";
+import { useState } from "react";
+import { motion } from "framer-motion";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "./ui/card";
+import faceImage from "../assets/pilot.png";
+import clockImage from "../assets/pilot.png";
+import notifImage from "../assets/reflecting.png";
 
-interface FeatureProps {
-  icon: JSX.Element;
+const roles = ["Walk-in", "Booking", "Emergency"] as const;
+type RoleType = typeof roles[number];
+
+interface StepCard {
   title: string;
   description: string;
+  image: string;
 }
 
-const features: FeatureProps[] = [
-  {
-    icon: <MedalIcon />,
-    title: "Scan Wajah / QR",
-    description:
-      "Siswa melakukan absensi dengan scan wajah atau QR code secara otomatis dan cepat.",
-  },
-  {
-    icon: <MapIcon />,
-    title: "Deteksi Lokasi",
-    description:
-      "Sistem akan mencatat lokasi GPS untuk memastikan kehadiran dilakukan di area sekolah.",
-  },
-  {
-    icon: <PlaneIcon />,
-    title: "Rekap Otomatis",
-    description:
-      "Data kehadiran langsung tersimpan dan direkap secara real-time oleh sistem Skoola.",
-  },
-  {
-    icon: <GiftIcon />,
-    title: "Notifikasi & Laporan",
-    description:
-      "Guru dan wali murid menerima notifikasi serta laporan lengkap kehadiran setiap hari.",
-  },
-];
+const roleSteps: Record<RoleType, StepCard[]> = {
+  "Walk-in": [
+    {
+      title: "Datang Langsung",
+      description: "Kunjungi bengkel kami di Jl. Desa Kalisuren 02/02, Tajurhalang.",
+      image: faceImage,
+    },
+    {
+      title: "Konsultasi Gratis",
+      description: "Ceritakan keluhan motor Anda ke mekanik kami.",
+      image: clockImage,
+    },
+    {
+      title: "Pengecekan Motor",
+      description: "Mekanik akan melakukan pengecekan menyeluruh kondisi motor.",
+      image: clockImage,
+    },
+    {
+      title: "Estimasi Biaya",
+      description: "Kami berikan estimasi biaya yang transparan sebelum service.",
+      image: notifImage,
+    },
+    {
+      title: "Proses Service",
+      description: "Service dikerjakan oleh mekanik berpengalaman dengan garansi.",
+      image: notifImage,
+    },
+  ],
+  Booking: [
+    {
+      title: "Hubungi WhatsApp",
+      description: "Chat kami di 082124717778 untuk booking service.",
+      image: faceImage,
+    },
+    {
+      title: "Pilih Jadwal",
+      description: "Tentukan waktu yang sesuai untuk service motor Anda.",
+      image: clockImage,
+    },
+    {
+      title: "Konfirmasi Booking",
+      description: "Kami akan konfirmasi jadwal dan jenis service yang diperlukan.",
+      image: clockImage,
+    },
+    {
+      title: "Datang Sesuai Jadwal",
+      description: "Kunjungi bengkel sesuai jadwal yang telah disepakati.",
+      image: notifImage,
+    },
+    {
+      title: "Service & Selesai",
+      description: "Motor Anda akan di-service sesuai paket yang dipilih.",
+      image: notifImage,
+    },
+  ],
+  Emergency: [
+    {
+      title: "Hubungi 24/7",
+      description: "Telepon atau WA ke 082124717778 untuk emergency service.",
+      image: faceImage,
+    },
+    {
+      title: "Jelaskan Kondisi",
+      description: "Beritahu kondisi dan lokasi motor Anda saat ini.",
+      image: clockImage,
+    },
+    {
+      title: "Tunggu Tim Kami",
+      description: "Tim emergency kami akan segera menuju lokasi Anda.",
+      image: notifImage,
+    },
+    {
+      title: "Penanganan Cepat",
+      description: "Mekanik akan melakukan penanganan awal di lokasi atau bawa ke bengkel.",
+      image: notifImage,
+    },
+  ],
+};
 
 export const HowItWorks = () => {
-  return (
-    <section
-      id="howItWorks"
-      className="container text-center py-24 sm:py-32"
-    >
-      <h2 className="text-3xl md:text-4xl font-bold">
-        Cara{" "}
-        <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Kerja{" "}
-        </span>
-        Skoola
-      </h2>
-      <p className="md:w-3/4 mx-auto mt-4 mb-8 text-xl text-muted-foreground">
-        Proses absensi digital Skoola dirancang sederhana dan aman untuk siswa dan guru, dari scan hingga laporan.
-      </p>
+  const [activeRole, setActiveRole] = useState<RoleType>("Walk-in");
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {features.map(({ icon, title, description }: FeatureProps) => (
-          <Card
-            key={title}
-            className="bg-muted/50"
+  return (
+    <section className="container py-24" id="how-it-works">
+      <h2 className="text-3xl lg:text-4xl font-bold text-center mb-8">
+        Cara Service di <span className="text-primary">Prasojo Motor</span>
+      </h2>
+
+      <div className="flex justify-center gap-4 mb-6 flex-wrap">
+        {roles.map((role) => (
+          <button
+            key={role}
+            onClick={() => setActiveRole(role)}
+            className={`px-4 py-2 rounded-full text-sm font-medium border transition-all ${
+              activeRole === role
+                ? "bg-primary text-white"
+                : "bg-muted hover:bg-primary/10"
+            }`}
           >
-            <CardHeader>
-              <CardTitle className="grid gap-4 place-items-center">
-                {icon}
-                {title}
-              </CardTitle>
-            </CardHeader>
-            <CardContent>{description}</CardContent>
-          </Card>
+            {role}
+          </button>
         ))}
       </div>
+
+      <motion.div
+        key={activeRole}
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+      >
+        {roleSteps[activeRole].map(({ title, description, image }) => (
+          <Card key={title} className="bg-muted/50 text-center">
+            <CardHeader>
+              <CardTitle>{title}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <img
+                src={image}
+                alt={title}
+                className="w-40 h-40 mx-auto mb-4"
+              />
+              <p className="text-sm text-muted-foreground">{description}</p>
+            </CardContent>
+          </Card>
+        ))}
+      </motion.div>
     </section>
   );
 };

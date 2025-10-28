@@ -12,7 +12,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
@@ -25,16 +24,20 @@ interface RouteProps {
 
 const routeList: RouteProps[] = [
   {
-    href: "#features",
-    label: "Features",
+    href: "#about",
+    label: "Tentang",
   },
   {
-    href: "#testimonials",
-    label: "Testimonials",
+    href: "#features",
+    label: "Layanan",
   },
   {
     href: "#pricing",
-    label: "Pricing",
+    label: "Harga",
+  },
+  {
+    href: "#testimonials",
+    label: "Testimoni",
   },
   {
     href: "#faq",
@@ -55,7 +58,7 @@ export const Navbar = () => {
               className="ml-2 font-bold text-xl flex"
             >
               <LogoIcon />
-   Skoola
+   Prasojo Motor
             </a>
           </NavigationMenuItem>
 
@@ -79,7 +82,7 @@ export const Navbar = () => {
               <SheetContent side={"left"}>
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">
-                    Skoola
+                    Prasojo Motor
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
@@ -96,14 +99,13 @@ export const Navbar = () => {
                   ))}
                   <a
                     rel="noreferrer noopener"
-                    href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+                    href="https://wa.me/6282124717778?text=Halo%20Prasojo%20Motor%2C%20saya%20ingin%20konsultasi"
                     target="_blank"
-                    className={`w-[110px] border ${buttonVariants({
+                    className={`w-[140px] border ${buttonVariants({
                       variant: "secondary",
                     })}`}
                   >
-                    <GitHubLogoIcon className="mr-2 w-5 h-5" />
-                    Github
+                    Hubungi Kami
                   </a>
                 </nav>
               </SheetContent>

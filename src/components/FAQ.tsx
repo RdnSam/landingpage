@@ -13,33 +13,33 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Apakah Skoola gratis digunakan?",
+    question: "Berapa biaya service di Prasojo Motor?",
     answer:
-      "Ya, Skoola menyediakan paket gratis untuk percobaan di 1 kelas dengan fitur dasar seperti absensi wajah dan QR Code.",
+      "Biaya service bervariasi tergantung jenis layanan. Service rutin mulai dari 50rb, Tune-up 150k-250k, dan Overhaul mulai dari 300k. Kami memberikan harga transparan tanpa biaya tersembunyi.",
     value: "item-1",
   },
   {
-    question: "Apakah bisa absen menggunakan wajah?",
+    question: "Apakah ada garansi setelah service?",
     answer:
-      "Bisa. Skoola mendukung absensi menggunakan teknologi face recognition dan akan mencatat lokasi otomatis.",
+      "Ya, setiap service dilengkapi garansi. Service Rutin 7 hari, Tune-up 14 hari, dan Overhaul/belah mesin 30 hari.",
     value: "item-2",
   },
   {
-    question: "Apakah Skoola bisa digunakan oleh guru dan siswa?",
+    question: "Apakah melayani semua jenis motor?",
     answer:
-      "Skoola mendukung multi-role. Guru, siswa, dan admin sekolah memiliki akun dan dashboard masing-masing.",
+      "Ya! Prasojo Motor melayani semua jenis motor, baik matic, bebek, sport, maupun motor tua. Mekanik kami berpengalaman menangani berbagai merk dan tipe.",
     value: "item-3",
   },
   {
-    question: "Apakah tersedia laporan bulanan dan harian?",
+    question: "Apakah tersedia layanan emergency?",
     answer:
-      "Ya. Skoola menyediakan rekap kehadiran harian dan bulanan secara otomatis dalam format yang siap diunduh.",
+      "Ya, kami menyediakan emergency service 24/7. Silakan hubungi kami di 082124717778 untuk bantuan darurat.",
     value: "item-4",
   },
   {
-    question: "Bagaimana jika saya ingin integrasi dengan sistem sekolah lain?",
+    question: "Bagaimana cara booking service?",
     answer:
-      "Untuk kebutuhan integrasi dan custom API, Anda dapat menggunakan paket Enterprise. Silakan hubungi tim kami untuk penyesuaian.",
+      "Anda bisa langsung datang ke bengkel di Jalan Desa Kalisuren 02/02 Tajurhalang, Kab. Bogor (buka 08:00-18:00) atau hubungi kami via WhatsApp di 082124717778 untuk konsultasi dan booking.",
     value: "item-5",
   },
 ];
@@ -83,10 +83,10 @@ export const FAQ = () => {
   Masih ada pertanyaan?{" "}
   <a
     rel="noreferrer noopener"
-    href="#"
+    href="https://wa.me/6282124717778?text=Halo%20Prasojo%20Motor%2C%20saya%20ingin%20konsultasi"
     className="text-primary transition-all border-primary hover:border-b-2"
   >
-    Hubungi tim kami
+    Hubungi kami via WhatsApp
   </a>
 </h3>
 

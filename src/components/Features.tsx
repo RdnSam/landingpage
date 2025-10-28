@@ -6,9 +6,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import image from "../assets/file.svg";
-import image3 from "../assets/clock.svg";
-import image4 from "../assets/qr.svg";
+import image from "../assets/growth.png";
+import image3 from "../assets/looking-ahead.png";
+import image4 from "../assets/cube-leg.png";
 
 interface FeatureProps {
   title: string;
@@ -18,36 +18,36 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Presensi Wajah & QR",
+    title: "Mekanik Berpengalaman",
     description:
-      "Siswa dapat melakukan absensi hanya dengan scan wajah atau QR code secara cepat dan akurat.",
+      "Tim mekanik profesional dengan pengalaman bertahun-tahun menangani semua jenis motor dari matic hingga sport.",
     image: image4,
   },
   {
-    title: "Deteksi Lokasi Otomatis",
+    title: "Garansi Service",
     description:
-      "Skoola secara otomatis mencatat lokasi absensi, memastikan siswa hadir di area sekolah.",
+      "Setiap service yang kami lakukan dilengkapi dengan garansi untuk memastikan kepuasan pelanggan.",
     image: image3,
   },
   {
-    title: "Laporan & Notifikasi Real-time",
+    title: "Pelayanan Amanah",
     description:
-      "Guru, siswa, dan wali murid mendapatkan notifikasi dan laporan kehadiran langsung dari sistem.",
+      "Kami bekerja dengan jujur dan amanah, memberikan konsultasi gratis dan harga transparan tanpa biaya tersembunyi.",
     image: image,
   },
 ];
 
 const featureList: string[] = [
-  "Scan Wajah",
-  "QR Code",
-  "Deteksi Lokasi",
-  "Laporan Kehadiran",
-  "Rekap Bulanan",
-  "Notifikasi Otomatis",
-  "Cuti/Izin Online",
-  "Dashboard Admin",
-  "Support Android & IOS  ",
-
+  "Service Rutin",
+  "Ganti Oli",
+  "Tune-Up",
+  "Perbaikan Mesin",
+  "Belah Mesin / Overhaul",
+  "Service Injection",
+  "Service CVT",
+  "Infus Motor",
+  "Custom/Modifikasi",
+  "Emergency Service",
 ];
 
 export const Features = () => {
@@ -57,9 +57,9 @@ export const Features = () => {
       className="container py-24 sm:py-32 space-y-8"
     >
       <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
-        Fitur Unggulan{" "}
+        Keunggulan{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Skoola
+          Prasojo Motor
         </span>
       </h2>
 
@@ -88,7 +88,7 @@ export const Features = () => {
             <CardFooter>
               <img
                 src={image}
-                alt="Skoola feature illustration"
+                alt="Prasojo Motor feature illustration"
                 className="w-[200px] lg:w-[300px] mx-auto"
               />
             </CardFooter>
