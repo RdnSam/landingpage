@@ -10,21 +10,21 @@ interface ServiceProps {
 
 const serviceList: ServiceProps[] = [
   {
-    title: "Service Rutin & Ganti Oli",
+    title: "Kusen Aluminium & Kayu",
     description:
-      "Perawatan berkala untuk menjaga performa motor tetap optimal. Meliputi penggantian oli, filter, dan pengecekan komponen penting.",
+      "Kusen aluminium dan kayu berkualitas tinggi untuk pintu dan jendela rumah Anda. Tersedia berbagai pilihan warna dan desain sesuai kebutuhan.",
     icon: <ChartIcon />,
   },
   {
-    title: "Tune-Up & Perbaikan Mesin",
+    title: "Pintu & Jendela",
     description:
-      "Tune-up profesional dan perbaikan mesin lengkap termasuk belah mesin/overhaul untuk semua jenis motor.",
+      "Pintu dan jendela aluminium/kayu dengan desain modern dan klasik. Kuat, tahan lama, dan anti rayap untuk jendela kayu.",
     icon: <WalletIcon />,
   },
   {
-    title: "Infus, Injection & CVT",
+    title: "Partisi Kaca & ACP",
     description:
-      "Spesialis service sistem injeksi, infus, dan CVT motor matic dengan teknologi dan alat modern.",
+      "Partisi kaca untuk ruangan modern dan panel ACP untuk eksterior bangunan. Hasil rapi dan profesional.",
     icon: <MagnifierIcon />,
   },
 ];
@@ -37,13 +37,13 @@ export const Services = () => {
         <div>
         <h2 className="text-3xl md:text-4xl font-bold">
   <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-    Layanan Unggulan{" "}
+    Produk Unggulan{" "}
   </span>
-  Prasojo Motor
+  Rifda Jepara
 </h2>
 
 <p className="text-muted-foreground text-xl mt-4 mb-8 ">
-  Layanan service motor lengkap untuk semua jenis motor. Profesional, bergaransi, dan amanah.
+  Produk kusen dan aluminium berkualitas tinggi untuk rumah dan bangunan Anda. Pengerjaan profesional dengan hasil memuaskan.
 </p>
 
           <div className="flex flex-col gap-8">

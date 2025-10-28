@@ -18,36 +18,36 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Mekanik Berpengalaman",
+    title: "Kualitas Premium",
     description:
-      "Tim mekanik profesional dengan pengalaman bertahun-tahun menangani semua jenis motor dari matic hingga sport.",
+      "Menggunakan bahan aluminium dan kayu berkualitas tinggi yang tahan lama, anti karat, dan anti rayap untuk produk kayu.",
     image: image4,
   },
   {
-    title: "Garansi Service",
+    title: "Pengerjaan Profesional",
     description:
-      "Setiap service yang kami lakukan dilengkapi dengan garansi untuk memastikan kepuasan pelanggan.",
+      "Tim berpengalaman dengan hasil pengerjaan rapi dan presisi. Dikerjakan oleh tenaga ahli profesional.",
     image: image3,
   },
   {
-    title: "Pelayanan Amanah",
+    title: "Garansi & Konsultasi",
     description:
-      "Kami bekerja dengan jujur dan amanah, memberikan konsultasi gratis dan harga transparan tanpa biaya tersembunyi.",
+      "Garansi produk dan pemasangan. Konsultasi gratis untuk desain dan pemilihan material yang sesuai kebutuhan.",
     image: image,
   },
 ];
 
 const featureList: string[] = [
-  "Service Rutin",
-  "Ganti Oli",
-  "Tune-Up",
-  "Perbaikan Mesin",
-  "Belah Mesin / Overhaul",
-  "Service Injection",
-  "Service CVT",
-  "Infus Motor",
-  "Custom/Modifikasi",
-  "Emergency Service",
+  "Kusen Aluminium",
+  "Kusen Kayu",
+  "Pintu Aluminium",
+  "Jendela Aluminium",
+  "Pintu Kayu",
+  "Jendela Kayu",
+  "Partisi Kaca",
+  "Kitchen Set",
+  "Panel ACP",
+  "Custom Design",
 ];
 
 export const Features = () => {
@@ -59,7 +59,7 @@ export const Features = () => {
       <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
         Keunggulan{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Prasojo Motor
+          Rifda Jepara
         </span>
       </h2>
 
@@ -88,7 +88,7 @@ export const Features = () => {
             <CardFooter>
               <img
                 src={image}
-                alt="Prasojo Motor feature illustration"
+                alt="Rifda Jepara feature illustration"
                 className="w-[200px] lg:w-[300px] mx-auto"
               />
             </CardFooter>

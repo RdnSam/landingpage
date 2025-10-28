@@ -13,32 +13,32 @@ export const Footer = () => {
             className="font-bold text-xl flex"
           >
             <LogoIcon />
-            Prasojo Motor
+            Rifda Jepara
           </a>
           <p className="mt-2 text-sm text-muted-foreground">
-            Bengkel motor profesional di Bogor. Jl. Desa Kalisuren 02/02 Tajurhalang, Kab. Bogor.
+            Spesialis kusen aluminium & kayu berkualitas di Bogor. Jl. Falah RT 02/02 Kalisuren, Tajurhalang, Parung, Bogor.
           </p>
           <p className="mt-2 text-sm text-muted-foreground">
-            Buka: Senin - Minggu, 08:00 - 18:00
+            Buka: Senin - Minggu, 06:00 - 18:00
           </p>
           <p className="mt-2 text-sm text-muted-foreground">
-            WA: 082124717778
+            WA: 081398774411
           </p>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Layanan</h3>
+          <h3 className="font-bold text-lg">Produk</h3>
           <a href="#features" className="opacity-60 hover:opacity-100">
-            Service Rutin
+            Kusen Aluminium
           </a>
           <a href="#features" className="opacity-60 hover:opacity-100">
-            Tune-Up
+            Pintu & Jendela
           </a>
-          <a href="#features" className="opacity-60 hover:opacity-100">
-            Overhaul
+          <a href="#pricing" className="opacity-60 hover:opacity-100">
+            Kitchen Set
           </a>
-          <a href="#features" className="opacity-60 hover:opacity-100">
-            Service Injection
+          <a href="#pricing" className="opacity-60 hover:opacity-100">
+            Partisi Kaca & ACP
           </a>
         </div>
 
@@ -60,13 +60,13 @@ export const Footer = () => {
 
         <div className="flex flex-col gap-2">
           <h3 className="font-bold text-lg">Kontak</h3>
-          <a href="https://wa.me/6282124717778" className="opacity-60 hover:opacity-100">
+          <a href="https://wa.me/6281398774411" className="opacity-60 hover:opacity-100">
             WhatsApp
           </a>
-          <a href="tel:082124717778" className="opacity-60 hover:opacity-100">
+          <a href="tel:081398774411" className="opacity-60 hover:opacity-100">
             Telepon
           </a>
-          <a href="https://maps.google.com/?q=Jalan Desa Kalisuren 02/02 Tajurhalang Bogor" className="opacity-60 hover:opacity-100">
+          <a href="https://maps.google.com/?q=Jalan Falah RT 02/02 Kalisuren Tajurhalang Parung Bogor" className="opacity-60 hover:opacity-100">
             Google Maps
           </a>
         </div>
@@ -74,7 +74,7 @@ export const Footer = () => {
 
       <section className="container pb-14 text-center">
         <h3>
-          &copy; 2024 Prasojo Motor — Bengkel Motor Terpercaya di Bogor
+          &copy; 2024 Rifda Jepara — Kusen Aluminium & Kayu Berkualitas di Bogor
         </h3>
       </section>
     </footer>

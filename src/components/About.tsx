@@ -11,7 +11,7 @@ export const About = () => {
         <div className="px-6 flex flex-col-reverse md:flex-row gap-8 md:gap-12">
           <img
             src={pilot}
-            alt="Prasojo Motor Bengkel Terpercaya"
+            alt="Rifda Jepara Kusen Berkualitas"
             className="w-[300px] object-contain rounded-lg"
           />
           <div className="bg-green-0 flex flex-col justify-between">
@@ -20,12 +20,12 @@ export const About = () => {
                 <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
                   Tentang{" "}
                 </span>
-                Prasojo Motor
+                Rifda Jepara
               </h2>
               <p className="text-xl text-muted-foreground mt-4">
-                Prasojo Motor adalah bengkel motor profesional yang berlokasi di Jalan Desa Kalisuren 02/02 Tajurhalang, Kabupaten Bogor.
-                Kami melayani semua jenis sepeda motor dengan layanan lengkap mulai dari service rutin, tune-up, perbaikan mesin, hingga custom modifikasi.
-                Dengan mekanik berpengalaman dan garansi service yang amanah, kepuasan pelanggan adalah prioritas kami.
+                Rifda Jepara adalah spesialis kusen aluminium dan kayu berkualitas tinggi yang berlokasi di Jalan Falah RT 02/02 Kalisuren, Tajurhalang, Parung, Bogor.
+                Kami menyediakan berbagai produk seperti kusen aluminium, pintu & jendela aluminium/kayu, partisi kaca, kitchen set, dan ACP dengan kualitas terbaik.
+                Dengan pengalaman lebih dari 10 tahun dan tim profesional, kepuasan pelanggan adalah prioritas utama kami.
               </p>
             </div>
 

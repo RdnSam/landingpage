@@ -10,7 +10,7 @@ import faceImage from "../assets/pilot.png";
 import clockImage from "../assets/pilot.png";
 import notifImage from "../assets/reflecting.png";
 
-const roles = ["Walk-in", "Booking", "Emergency"] as const;
+const roles = ["Konsultasi", "Survey", "Pemesanan"] as const;
 type RoleType = typeof roles[number];
 
 interface StepCard {
@@ -20,91 +20,86 @@ interface StepCard {
 }
 
 const roleSteps: Record<RoleType, StepCard[]> = {
-  "Walk-in": [
+  "Konsultasi": [
     {
-      title: "Datang Langsung",
-      description: "Kunjungi bengkel kami di Jl. Desa Kalisuren 02/02, Tajurhalang.",
+      title: "Hubungi Kami",
+      description: "Chat WhatsApp ke 081398774411 atau kunjungi workshop kami.",
       image: faceImage,
     },
     {
-      title: "Konsultasi Gratis",
-      description: "Ceritakan keluhan motor Anda ke mekanik kami.",
+      title: "Konsultasi Kebutuhan",
+      description: "Ceritakan kebutuhan kusen, pintu, jendela, atau kitchen set Anda.",
       image: clockImage,
     },
     {
-      title: "Pengecekan Motor",
-      description: "Mekanik akan melakukan pengecekan menyeluruh kondisi motor.",
+      title: "Diskusi Desain",
+      description: "Tim kami membantu menentukan desain dan material yang sesuai.",
       image: clockImage,
     },
     {
-      title: "Estimasi Biaya",
-      description: "Kami berikan estimasi biaya yang transparan sebelum service.",
-      image: notifImage,
-    },
-    {
-      title: "Proses Service",
-      description: "Service dikerjakan oleh mekanik berpengalaman dengan garansi.",
+      title: "Estimasi Harga",
+      description: "Kami berikan estimasi harga yang transparan dan kompetitif.",
       image: notifImage,
     },
   ],
-  Booking: [
+  Survey: [
     {
-      title: "Hubungi WhatsApp",
-      description: "Chat kami di 082124717778 untuk booking service.",
+      title: "Jadwalkan Survey",
+      description: "Tentukan waktu untuk survey lokasi proyek Anda.",
       image: faceImage,
     },
     {
-      title: "Pilih Jadwal",
-      description: "Tentukan waktu yang sesuai untuk service motor Anda.",
+      title: "Kunjungan Lokasi",
+      description: "Tim kami datang untuk mengukur dan survey lokasi secara gratis.",
       image: clockImage,
     },
     {
-      title: "Konfirmasi Booking",
-      description: "Kami akan konfirmasi jadwal dan jenis service yang diperlukan.",
+      title: "Pengukuran Detail",
+      description: "Kami lakukan pengukuran akurat untuk hasil pemasangan sempurna.",
       image: clockImage,
     },
     {
-      title: "Datang Sesuai Jadwal",
-      description: "Kunjungi bengkel sesuai jadwal yang telah disepakati.",
-      image: notifImage,
-    },
-    {
-      title: "Service & Selesai",
-      description: "Motor Anda akan di-service sesuai paket yang dipilih.",
+      title: "Penawaran Final",
+      description: "Kami berikan penawaran harga final berdasarkan hasil survey.",
       image: notifImage,
     },
   ],
-  Emergency: [
+  Pemesanan: [
     {
-      title: "Hubungi 24/7",
-      description: "Telepon atau WA ke 082124717778 untuk emergency service.",
+      title: "Konfirmasi Pesanan",
+      description: "Setujui desain, material, dan harga yang telah disepakati.",
       image: faceImage,
     },
     {
-      title: "Jelaskan Kondisi",
-      description: "Beritahu kondisi dan lokasi motor Anda saat ini.",
+      title: "Pembayaran DP",
+      description: "Lakukan pembayaran down payment untuk memulai produksi.",
       image: clockImage,
     },
     {
-      title: "Tunggu Tim Kami",
-      description: "Tim emergency kami akan segera menuju lokasi Anda.",
+      title: "Proses Produksi",
+      description: "Tim produksi mulai mengerjakan pesanan Anda dengan material premium.",
       image: notifImage,
     },
     {
-      title: "Penanganan Cepat",
-      description: "Mekanik akan melakukan penanganan awal di lokasi atau bawa ke bengkel.",
+      title: "Pemasangan",
+      description: "Tim profesional kami memasang produk di lokasi dengan rapi.",
+      image: notifImage,
+    },
+    {
+      title: "Selesai & Garansi",
+      description: "Proyek selesai dengan hasil memuaskan dan dilengkapi garansi.",
       image: notifImage,
     },
   ],
 };
 
 export const HowItWorks = () => {
-  const [activeRole, setActiveRole] = useState<RoleType>("Walk-in");
+  const [activeRole, setActiveRole] = useState<RoleType>("Konsultasi");
 
   return (
     <section className="container py-24" id="how-it-works">
       <h2 className="text-3xl lg:text-4xl font-bold text-center mb-8">
-        Cara Service di <span className="text-primary">Prasojo Motor</span>
+        Cara Pesan di <span className="text-primary">Rifda Jepara</span>
       </h2>
 
       <div className="flex justify-center gap-4 mb-6 flex-wrap">

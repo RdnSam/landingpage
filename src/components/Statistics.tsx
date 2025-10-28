@@ -6,20 +6,20 @@ export const Statistics = () => {
 
   const stats: statsProps[] = [
     {
-      quantity: "9999999+",
-      description: "Motor Ditangani",
+      quantity: "500+",
+      description: "Proyek Selesai",
     },
     {
-      quantity: "25+",
+      quantity: "10+",
       description: "Tahun Pengalaman",
     },
     {
-      quantity: "500+",
-      description: "Pelanggan Setia",
+      quantity: "300+",
+      description: "Pelanggan Puas",
     },
     {
-      quantity: "99%",
-      description: "Kepuasan Pelanggan",
+      quantity: "100%",
+      description: "Garansi Kualitas",
     },
   ];
 

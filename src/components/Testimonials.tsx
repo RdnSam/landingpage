@@ -18,43 +18,43 @@ const testimonials: TestimonialProps[] = [
   {
     image: "https://i.pravatar.cc/150?img=32",
     name: "Pak Budi",
-    userName: "Pengguna Yamaha Vixion 2015",
-    comment: "Motor tua saya yang udah ngebul sekarang kembali kencang! Service overhaul di Prasojo Motor hasilnya memuaskan, mekaniknya juga profesional dan amanah.",
+    userName: "Rumah Minimalis Tajurhalang",
+    comment: "Pasang kusen aluminium dan jendela untuk rumah baru saya di Rifda Jepara. Hasilnya rapi, harga bersaing, dan pengerjaan cepat. Recommended!",
   },
   {
     image: "https://i.pravatar.cc/150?img=12",
     name: "Mas Andi",
-    userName: "Honda Beat 2018",
+    userName: "Renovasi Rumah Parung",
     comment:
-      "Tune-up di sini beda! CVT motor matic saya jadi halus banget. Harga juga transparan, ga ada biaya tersembunyi. Recommended!",
+      "Ganti semua pintu dan jendela kayu dengan aluminium. Kualitas bagus, anti karat, dan pemasangan profesional. Pelayanan ramah dan garansi jelas!",
   },
   {
     image: "https://i.pravatar.cc/150?img=45",
     name: "Mbak Siti",
-    userName: "Scoopy 2020",
+    userName: "Kitchen Set Custom",
     comment:
-      "Bengkel langganan saya sekarang. Service rutin selalu di Prasojo Motor karena mekaniknya jujur dan kasih saran yang bener-bener dibutuhin motor.",
+      "Kitchen set buatan Rifda Jepara sangat memuaskan! Desain sesuai keinginan, material bagus, dan harga transparan. Pengerjaan juga tepat waktu.",
   },
   {
     image: "https://i.pravatar.cc/150?img=23",
     name: "Bang Rizal",
-    userName: "Suzuki Satria F150 2012",
+    userName: "Partisi Kaca Kantor",
     comment:
-      "Motor lama saya yang udah lemot sekarang kembali bertenaga setelah tune-up dan service injection. Makasih Prasojo Motor!",
+      "Pasang partisi kaca untuk kantor. Hasilnya elegan dan modern. Tim Rifda Jepara profesional dan hasil pemasangan sangat rapi. Terima kasih!",
   },
   {
     image: "https://i.pravatar.cc/150?img=18",
     name: "Pak Hendra",
-    userName: "Yamaha Mio 2014",
+    userName: "Kusen Kayu Custom",
     comment:
-      "Sudah beberapa kali service di sini, selalu puas dengan hasilnya. Garansi service juga benar-benar ditepati. Bengkel motor terpercaya!",
+      "Sudah beberapa kali order kusen kayu untuk proyek rumah klien. Kualitas kayu premium, anti rayap, dan finishing rapi. Langganan terus!",
   },
   {
     image: "https://i.pravatar.cc/150?img=60",
     name: "Doni",
-    userName: "Honda Vario 160 2021",
+    userName: "Panel ACP Ruko",
     comment:
-      "Pernah motor mogok malam-malam, langsung telpon ke Prasojo Motor, langsung dibantu. Service emergency-nya cepat dan membantu banget!",
+      "Pasang panel ACP untuk ruko baru. Warna pilihan banyak, pemasangan cepat dan rapi. Harga juga kompetitif. Puas dengan hasilnya!",
   },
 ];
 
@@ -73,7 +73,7 @@ export const Testimonials = () => {
       </h2>
 
       <p className="text-xl text-muted-foreground pt-4 pb-8">
-        Prasojo Motor telah dipercaya oleh ratusan pemilik motor di Bogor dan sekitarnya untuk merawat motor kesayangan mereka.
+        Rifda Jepara telah dipercaya oleh ratusan pelanggan di Bogor dan sekitarnya untuk proyek kusen aluminium, kayu, kitchen set, dan ACP berkualitas.
       </p>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2 lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">

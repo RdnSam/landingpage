@@ -36,15 +36,15 @@ export const AboutIntro: React.FC = () => {
                 <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
                   Galeri{" "}
                 </span>
-                Prasojo Motor
+                Rifda Jepara
               </h2>
 
               {/* Paragraf pertama */}
               <p className="text-xl text-muted-foreground mt-4">
-                Prasojo Motor adalah bengkel motor profesional yang melayani semua jenis sepeda motor.
-                Dari service rutin, tune-up, hingga overhaul mesin dengan garansi service yang terpercaya.
-                Mekanik kami berpengalaman menangani motor matic, bebek, sport, dan motor tua dengan hasil memuaskan.
-                Kami berkomitmen memberikan pelayanan terbaik dengan harga transparan dan amanah.
+                Rifda Jepara adalah spesialis kusen aluminium dan kayu berkualitas tinggi di Bogor.
+                Kami menyediakan berbagai produk seperti kusen, pintu, jendela aluminium/kayu, kitchen set, partisi kaca, dan panel ACP.
+                Tim profesional kami berpengalaman dalam produksi dan pemasangan dengan hasil rapi dan tahan lama.
+                Kami berkomitmen memberikan pelayanan terbaik dengan harga transparan dan garansi kualitas.
               </p>
 
               {/* Video embed + tombol navigasi */}
@@ -104,10 +104,10 @@ export const AboutIntro: React.FC = () => {
 
             {/* Paragraf kedua, tetap di bawah video */}
             <p className="text-xl text-muted-foreground mt-0">
-              Kami melayani service injection, infus, CVT, dan custom modifikasi motor sesuai kebutuhan Anda.
-              Lokasi kami di Jalan Desa Kalisuren 02/02 Tajurhalang, Kabupaten Bogor.
-              Buka setiap hari Senin-Minggu pukul 08:00-18:00. Untuk emergency service 24/7, hubungi kami di WhatsApp 082124717778.
-              Percayakan perawatan motor Anda kepada Prasojo Motor - bengkel motor terpercaya di Bogor.
+              Kami menerima custom design sesuai kebutuhan Anda dengan berbagai pilihan material premium.
+              Lokasi workshop kami di Jalan Falah RT 02/02 Kalisuren, Tajurhalang, Parung, Bogor.
+              Buka setiap hari Senin-Minggu pukul 06:00-18:00. Untuk konsultasi dan survey gratis, hubungi kami di WhatsApp 081398774411.
+              Percayakan kebutuhan kusen dan aluminium Anda kepada Rifda Jepara - spesialis kusen berkualitas di Bogor.
             </p>
           </div>
         </div>

@@ -9,15 +9,15 @@ export const Cta = () => {
       <div className="container lg:grid lg:grid-cols-2 place-items-center">
         <div className="lg:col-start-1">
           <h2 className="text-3xl md:text-4xl font-bold ">
-            Motor Anda
+            Butuh Kusen Aluminium
             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
               {" "}
-              Butuh Service?{" "}
+              atau Kitchen Set?{" "}
             </span>
             Kami Siap Membantu
           </h2>
           <p className="text-muted-foreground text-xl mt-4 mb-8 lg:mb-0">
-            Prasojo Motor melayani semua jenis service motor dengan mekanik berpengalaman, garansi service, dan harga transparan. Hubungi kami sekarang!
+            Rifda Jepara menyediakan kusen aluminium, kayu, pintu, jendela, kitchen set, dan ACP berkualitas dengan harga transparan. Konsultasi gratis sekarang!
           </p>
         </div>
 
@@ -27,7 +27,7 @@ export const Cta = () => {
   className="w-full md:mr-4 md:w-auto"
 >
   <a
-    href="https://wa.me/6282124717778?text=Halo%20Prasojo%20Motor%2C%20saya%20ingin%20konsultasi%20service%20motor"
+    href="https://wa.me/6281398774411?text=Halo%20Rifda%20Jepara%2C%20saya%20ingin%20konsultasi%20kusen%20aluminium"
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -40,7 +40,7 @@ export const Cta = () => {
             className="w-full md:w-auto"
             onClick={() => window.location.href = '#pricing'}
           >
-            Lihat Paket Harga
+            Lihat Produk Kami
           </Button>
         </div>
       </div>

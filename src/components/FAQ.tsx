@@ -13,33 +13,33 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Berapa biaya service di Prasojo Motor?",
+    question: "Berapa harga kusen aluminium dan kayu di Rifda Jepara?",
     answer:
-      "Biaya service bervariasi tergantung jenis layanan. Service rutin mulai dari 50rb, Tune-up 150k-250k, dan Overhaul mulai dari 300k. Kami memberikan harga transparan tanpa biaya tersembunyi.",
+      "Harga bervariasi tergantung jenis material, ukuran, dan desain yang Anda pilih. Untuk kusen aluminium, pintu, jendela, kitchen set, dan panel ACP, silakan hubungi kami untuk penawaran terbaik. Kami memberikan harga transparan dan kompetitif.",
     value: "item-1",
   },
   {
-    question: "Apakah ada garansi setelah service?",
+    question: "Apakah ada garansi untuk produk dan pemasangan?",
     answer:
-      "Ya, setiap service dilengkapi garansi. Service Rutin 7 hari, Tune-up 14 hari, dan Overhaul/belah mesin 30 hari.",
+      "Ya, semua produk kami dilengkapi dengan garansi kualitas. Kusen aluminium garansi anti karat, kusen kayu anti rayap, dan garansi pemasangan untuk memastikan hasil yang rapi dan tahan lama.",
     value: "item-2",
   },
   {
-    question: "Apakah melayani semua jenis motor?",
+    question: "Apakah bisa custom desain dan ukuran?",
     answer:
-      "Ya! Prasojo Motor melayani semua jenis motor, baik matic, bebek, sport, maupun motor tua. Mekanik kami berpengalaman menangani berbagai merk dan tipe.",
+      "Tentu saja! Rifda Jepara menerima custom desain untuk kusen, pintu, jendela, kitchen set, dan partisi kaca sesuai kebutuhan Anda. Tim kami akan membantu mewujudkan desain impian Anda.",
     value: "item-3",
   },
   {
-    question: "Apakah tersedia layanan emergency?",
+    question: "Berapa lama pengerjaan proyek?",
     answer:
-      "Ya, kami menyediakan emergency service 24/7. Silakan hubungi kami di 082124717778 untuk bantuan darurat.",
+      "Waktu pengerjaan tergantung pada kompleksitas dan skala proyek. Untuk proyek standar, biasanya 1-2 minggu. Kami akan memberikan estimasi waktu yang jelas setelah survey lokasi.",
     value: "item-4",
   },
   {
-    question: "Bagaimana cara booking service?",
+    question: "Bagaimana cara konsultasi dan pemesanan?",
     answer:
-      "Anda bisa langsung datang ke bengkel di Jalan Desa Kalisuren 02/02 Tajurhalang, Kab. Bogor (buka 08:00-18:00) atau hubungi kami via WhatsApp di 082124717778 untuk konsultasi dan booking.",
+      "Anda bisa langsung datang ke workshop kami di Jalan Falah RT 02/02 Kalisuren, Tajurhalang, Parung, Bogor (buka Senin-Minggu 06:00-18:00) atau hubungi via WhatsApp di 081398774411 untuk konsultasi gratis dan survey lokasi.",
     value: "item-5",
   },
 ];
@@ -83,7 +83,7 @@ export const FAQ = () => {
   Masih ada pertanyaan?{" "}
   <a
     rel="noreferrer noopener"
-    href="https://wa.me/6282124717778?text=Halo%20Prasojo%20Motor%2C%20saya%20ingin%20konsultasi"
+    href="https://wa.me/6281398774411?text=Halo%20Rifda%20Jepara%2C%20saya%20ingin%20konsultasi"
     className="text-primary transition-all border-primary hover:border-b-2"
   >
     Hubungi kami via WhatsApp

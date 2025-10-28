@@ -24,17 +24,17 @@ export const HeroCards = () => {
               alt=""
               src="https://i.pravatar.cc/150?img=32"
             />
-            <AvatarFallback>AM</AvatarFallback>
+            <AvatarFallback>PB</AvatarFallback>
           </Avatar>
 
           <div className="flex flex-col">
-            <CardTitle className="text-lg">Andika Mahesa</CardTitle>
-            <CardDescription>Pelanggan Yamaha Vixion 2015</CardDescription>
+            <CardTitle className="text-lg">Pak Budi</CardTitle>
+            <CardDescription>Rumah Minimalis Tajurhalang</CardDescription>
           </div>
         </CardHeader>
 
         <CardContent>
-          Prasojo Motor bantu motor lama saya kembali kencang! Service mesin sangat memuaskan, mekaniknya juga amanah dan profesional.
+          Pasang kusen aluminium dan jendela untuk rumah baru saya di Rifda Jepara. Hasilnya rapi, harga bersaing, dan pengerjaan cepat!
         </CardContent>
       </Card>
 
@@ -46,15 +46,15 @@ export const HeroCards = () => {
             alt="user avatar"
             className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover"
           />
-          <CardTitle className="text-center">Prasojo Motor</CardTitle>
+          <CardTitle className="text-center">Rifda Jepara</CardTitle>
           <CardDescription className="font-normal text-primary">
-            Bengkel Motor Terpercaya
+            Kusen Aluminium & Kayu Berkualitas
           </CardDescription>
         </CardHeader>
 
         <CardContent className="text-center pb-2">
           <p>
-            Kami hadir untuk merawat motor kesayangan Anda dengan layanan profesional, garansi service, dan harga transparan.
+            Kami hadir untuk menyediakan kusen aluminium, kayu, kitchen set, dan ACP berkualitas dengan harga transparan dan garansi produk.
           </p>
         </CardContent>
 
@@ -130,7 +130,7 @@ export const HeroCards = () => {
       <Card className="absolute top-[150px] left-[50px] w-72 drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader>
           <CardTitle className="flex item-center justify-between">
-            Paket Tune-Up
+            Pintu & Jendela
             <Badge
               variant="secondary"
               className="text-sm text-primary"
@@ -139,24 +139,23 @@ export const HeroCards = () => {
             </Badge>
           </CardTitle>
           <div>
-            <span className="text-3xl font-bold">150k-250k</span>
-            <span className="text-muted-foreground"> /paket</span>
+            <span className="text-3xl font-bold">Hubungi Kami</span>
           </div>
 
           <CardDescription>
-            Tingkatkan performa motor Anda dengan tune-up lengkap: setting karburator/injeksi, CVT, dan sistem kelistrikan.
+            Pintu dan jendela aluminium/kayu dengan desain modern dan klasik. Kuat, tahan lama, dan anti rayap untuk produk kayu.
           </CardDescription>
         </CardHeader>
 
         <CardContent>
-          <Button className="w-full">Booking Sekarang</Button>
+          <Button className="w-full">Minta Penawaran</Button>
         </CardContent>
 
         <hr className="w-4/5 m-auto mb-4" />
 
         <CardFooter className="flex">
           <div className="space-y-4">
-            {["Garansi 14 Hari", "Mekanik Berpengalaman", "SIP POKOKNYA LAH"].map(
+            {["Custom Ukuran", "Garansi Pemasangan", "Material Premium"].map(
               (benefit: string) => (
                 <span
                   key={benefit}
@@ -178,9 +177,9 @@ export const HeroCards = () => {
             <LightBulbIcon />
           </div>
           <div>
-            <CardTitle>Konsultasi Gratis</CardTitle>
+            <CardTitle>Konsultasi & Survey Gratis</CardTitle>
             <CardDescription className="text-md mt-2">
-              Konsultasi gratis untuk semua masalah motor Anda. Mekanik kami siap memberikan solusi terbaik dengan harga transparan.
+              Konsultasi gratis untuk kebutuhan kusen, pintu, jendela, dan kitchen set Anda. Survey lokasi gratis dengan penawaran harga transparan.
             </CardDescription>
           </div>
         </CardHeader>

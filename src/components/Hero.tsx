@@ -10,25 +10,25 @@ export const Hero = () => {
         <main className="text-5xl md:text-6xl font-bold text-center">
           <h1 className="inline">
             <span className="inline bg-gradient-to-r from-[#FF7E5F] to-[#FD3A69] text-transparent bg-clip-text">
-              Prasojo Motor
+              Rifda Jepara
             </span>{" "}
-            Bengkel Motor{" "}
+            Kusen Aluminium &{" "}
             <span className="inline bg-gradient-to-r from-[#43CEA2] via-[#185A9D] to-[#0F2027] text-transparent bg-clip-text">
-              Terpercaya
+              Kayu Berkualitas
             </span>{" "}
           </h1>
         </main>
 
         <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-          Bengkel motor profesional di Bogor dengan layanan service lengkap, garansi terpercaya, dan mekanik berpengalaman. Kami siap merawat motor Anda dengan amanah.
+          Spesialis kusen aluminium, pintu, jendela, partisi kaca, kitchen set, dan ACP berkualitas tinggi di Bogor. Pengerjaan profesional dengan hasil memuaskan.
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <Button className="w-full md:w-1/3">Lihat Layanan</Button>
+          <Button className="w-full md:w-1/3">Lihat Produk</Button>
 
           <a
             rel="noreferrer noopener"
-            href="https://wa.me/6282124717778?text=Halo%20Prasojo%20Motor%2C%20saya%20ingin%20konsultasi%20service%20motor"
+            href="https://wa.me/6281398774411?text=Halo%20Rifda%20Jepara%2C%20saya%20ingin%20konsultasi%20kusen"
             target="_blank"
             className={`w-full md:w-1/3 ${buttonVariants({
               variant: "outline",

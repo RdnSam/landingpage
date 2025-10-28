@@ -11,7 +11,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Check } from "lucide-react";
-import { PaymentModal } from "./payments/PaymentModal"; // sesuaikan path
+import { PaymentModal } from "./payments/PaymentModal";
 
 enum PopularPlanType {
   NO = 0,
@@ -29,54 +29,54 @@ interface PricingProps {
 
 const pricingList: PricingProps[] = [
   {
-    title: "Service Rutin",
+    title: "Kusen Aluminium",
     popular: PopularPlanType.NO,
-    price: "Mulai 50rb",
-    description: "Paket service berkala untuk motor Anda",
+    price: "Hubungi Kami",
+    description: "Kusen aluminium berkualitas untuk rumah Anda",
     buttonText: "Konsultasi Sekarang",
     benefitList: [
-      "Ganti oli mesin berkualitas",
-      "Pengecekan komponen penting",
-      "Pembersihan filter udara",
-      "Pelumasan rantai",
-      "Pengecekan rem & ban",
-      "Gratis konsultasi kondisi motor",
-      "Garansi service 7 hari"
+      "Bahan aluminium premium",
+      "Anti karat & tahan lama",
+      "Berbagai pilihan warna",
+      "Pemasangan profesional",
+      "Garansi produk",
+      "Survey & konsultasi gratis",
+      "Harga kompetitif"
     ],
   },
   {
-    title: "Tune-Up",
+    title: "Pintu & Jendela",
     popular: PopularPlanType.YES,
-    price: "150k - 250k",
-    description: "Tingkatkan performa motor Anda",
-    buttonText: "Booking Tune-Up",
+    price: "Hubungi Kami",
+    description: "Pintu dan jendela aluminium/kayu berkualitas",
+    buttonText: "Minta Penawaran",
     benefitList: [
-      "Semua layanan Service Rutin",
-      "Setting karburator/injeksi optimal",
-      "Pembersihan sistem bahan bakar",
-      "Pengecekan sistem kelistrikan",
-      "Setting timing pengapian",
-      "Tune CVT untuk motor matic",
-      "Garansi service 14 hari",
-     
+      "Desain modern & klasik",
+      "Aluminium & kayu berkualitas",
+      "Anti rayap (untuk kayu)",
+      "Kuat & tahan lama",
+      "Pemasangan rapi",
+      "Garansi pemasangan",
+      "Free konsultasi desain",
+      "Custom ukuran"
     ],
   },
   {
-    title: "Overhaul / Belah Mesin",
+    title: "Kitchen Set & ACP",
     popular: PopularPlanType.NO,
-    price: "Mulai 300k",
-    description: "Perbaikan mesin menyeluruh",
-    buttonText: "Konsultasi Overhaul",
+    price: "Hubungi Kami",
+    description: "Kitchen set dan panel ACP premium",
+    buttonText: "Konsultasi Proyek",
     benefitList: [
-      "Pembongkaran & analisa mesin lengkap",
-      "Penggantian spare part sesuai kebutuhan",
-      "Porting & polishing (opsional)",
-      "Setting ulang mesin optimal",
-      "Service injeksi & infus",
-      "Service CVT menyeluruh",
-      "Garansi service 30 hari",
-      "Custom/modifikasi tersedia",
-      "Emergency service 24/7 (call)"
+      "Kitchen set custom design",
+      "Material berkualitas tinggi",
+      "Panel ACP untuk eksterior",
+      "Partisi kaca modern",
+      "Pengerjaan profesional",
+      "Garansi kualitas",
+      "Survey lokasi gratis",
+      "Harga transparan",
+      "Cicilan tersedia"
     ],
   },
 ];
@@ -94,13 +94,13 @@ export const Pricing: React.FC = () => {
     <>
       <section id="pricing" className="container py-24 sm:py-32">
         <h2 className="text-3xl md:text-4xl font-bold text-center">
-          Paket Service{" "}
+          Produk & Layanan{" "}
           <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-            Prasojo Motor
+            Rifda Jepara
           </span>
         </h2>
         <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
-          Pilih paket service yang sesuai dengan kebutuhan motor Anda. Semua paket bergaransi dan dikerjakan dengan amanah.
+          Solusi lengkap kusen aluminium, kayu, kitchen set, dan ACP untuk rumah dan bangunan Anda. Hubungi kami untuk penawaran terbaik.
         </h3>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -172,8 +172,8 @@ export const Pricing: React.FC = () => {
           }
           accountNumber="4812133130"
           bankName="BANK CENTRAL ASIA"
-          accountName="PRASOJO MOTOR"
-          phoneNumber="+6282124717778"
+          accountName="RIFDA JEPARA"
+          phoneNumber="+6281398774411"
         />
       )}
     </>
