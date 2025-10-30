@@ -30,7 +30,7 @@ export function getCloudinaryUrl(
     quality = 'auto',
     format = 'auto',
     crop = 'fill',
-    gravity = 'auto',
+    gravity,
   } = options;
 
   const transformations: string[] = [];
@@ -38,7 +38,10 @@ export function getCloudinaryUrl(
   if (width) transformations.push(`w_${width}`);
   if (height) transformations.push(`h_${height}`);
   if (crop) transformations.push(`c_${crop}`);
-  if (gravity) transformations.push(`g_${gravity}`);
+  // Only add gravity if crop is fill and gravity is specified
+  if (gravity && (crop === 'fill' || crop === 'crop')) {
+    transformations.push(`g_${gravity}`);
+  }
   transformations.push(`q_${quality}`);
   transformations.push(`f_${format}`);
 

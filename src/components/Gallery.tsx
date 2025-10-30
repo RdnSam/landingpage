@@ -135,16 +135,18 @@ export const Gallery = () => {
       {/* Lightbox Modal */}
       {selectedImage && (
         <div
-          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 bg-black/95 flex items-center justify-center p-4"
+          style={{ zIndex: 9999 }}
           onClick={() => setSelectedImage(null)}
         >
           <button
-            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
+            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors z-10"
             onClick={() => setSelectedImage(null)}
+            aria-label="Close"
           >
             <X className="w-8 h-8" />
           </button>
-          <div className="max-w-6xl max-h-[90vh] relative" onClick={(e) => e.stopPropagation()}>
+          <div className="relative w-full max-w-6xl flex items-center justify-center" onClick={(e) => e.stopPropagation()}>
             <img
               src={getCloudinaryUrl(selectedImage.id, {
                 width: 1920,
@@ -153,7 +155,11 @@ export const Gallery = () => {
                 crop: 'limit',
               })}
               alt={selectedImage.title || "Rifda Jepara Gallery"}
-              className="max-w-full max-h-[90vh] object-contain rounded-lg"
+              className="max-w-full max-h-[90vh] w-auto h-auto object-contain rounded-lg"
+              onError={(e) => {
+                console.error('Image failed to load:', selectedImage.id);
+                e.currentTarget.src = 'https://via.placeholder.com/800x600?text=Image+Not+Found';
+              }}
             />
             {selectedImage.title && (
               <div className="absolute bottom-0 left-0 right-0 bg-black/70 text-white p-4 rounded-b-lg">
