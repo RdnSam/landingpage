@@ -40,7 +40,7 @@ export const Cta = () => {
             className="w-full md:w-auto"
             asChild
           >
-            <a href="#pricing">
+            <a href="#gallery">
               Lihat Produk Kami
             </a>
           </Button>

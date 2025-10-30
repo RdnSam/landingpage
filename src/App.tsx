@@ -14,6 +14,7 @@ import { Testimonials } from "./components/Testimonials";
 import "./App.css";
 import { Services } from "./components/Services";
 import { AboutIntro } from "./components/AboutIntro";
+import { Gallery } from "./components/Gallery";
 
 
 
@@ -29,6 +30,7 @@ function App() {
       <HowItWorks />
      
       <Services />
+      <Gallery />
       <Cta />
       <Testimonials />
       {/* <Team /> */}
